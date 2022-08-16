@@ -4,13 +4,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DelegateTwo
+namespace Delegate
 {
     internal class Delegate2
     {
         public delegate void Reel(int percentConcluded);
         public static void ReelUploader(Reel re)
         {
+            
             {
                 for (int i = 0; i < 100000; i++)
                 {
@@ -19,14 +20,7 @@ namespace DelegateTwo
                 }
             }
         }
-        static void TryAnonymous()
-        {
-            Reel Ig = delegate (int percent)
-            {
-                var answer = percent / 100;
-                Console.WriteLine(answer);
-            };
-        }
+      
 
     }
 }
